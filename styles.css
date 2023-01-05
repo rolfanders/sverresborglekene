@@ -17,14 +17,20 @@ body {
 
 header {
     width: 100%;
-    height: 10rem;
-    background-color: #fff;
-}
-
+    height: 260px;
+    background-image: url('/assets/headerBgSmall.svg');
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: cover;
+  }
+  
 footer {
   width: 100%;
-  height: 10rem;
-  background-color: #fff;
+  height: 498px;
+  background-image: url('/assets/fjellSmall.svg');
+  background-repeat: no-repeat;
+  background-position:top center;
+  background-size: cover;
 }
 
 #contentWrapper {
