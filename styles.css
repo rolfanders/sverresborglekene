@@ -22,7 +22,7 @@ header {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 255px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 footer {
@@ -44,8 +44,23 @@ section {
   margin: 0 0 4rem;
 }
 
+a,
+a:visited {
+  color: #486680;
+}
+
 h1 {
-  display: none;
+  height: 245px;
+  width: 243px;
+  top: -16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/logoLekene.svg');
+  background-size: 245px;
+  background-repeat: no-repeat;
+  color: transparent;
 }
 
 h2 {
@@ -78,7 +93,13 @@ p {
     height: 242px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/headerBgMedium.svg');
     background-size: 100% 242px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    width: 261px;
+    height: 263px;
+    top: -37px;
+    background-size: 261px;
   }
   footer {
     height: 268px;
@@ -96,13 +117,19 @@ p {
     height: 242px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/headerBgMedium.svg');
     background-size: 100% 242px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+  }
+  h1 {
+    width: 320px;
+    height: 328px;
+    top: -37px;
+    background-size: 320px;
   }
   footer {
     height: 268px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjellMedium.svg');
     background-size: 100% 268px;
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 
@@ -114,6 +141,12 @@ p {
     height: 501px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/headerBgLarge.svg');
     background-size: 100% 501px;
+  }
+  h1 {
+    width: 482px;
+    height: 486px;
+    top: -33px;
+    background-size: 482px;
   }
   footer {
     height: 268px;
