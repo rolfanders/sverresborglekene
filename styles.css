@@ -33,6 +33,7 @@ footer {
   background-position: top center;
   background-size: 100% 418px;
   margin-top: 60px;
+  position: relative;
 }
 
 #contentWrapper {
@@ -88,11 +89,40 @@ h3 {
 
 p {
   margin: 0 0 2em;
+  line-height: 1.4em;
 }
 
 #ingress {
   font-size: 1.1rem;
-  line-height: 1.6rem;
+  line-height: 2em;
+}
+
+#arrInfo {
+  position: absolute;
+  bottom: 32px;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#arrInfo .korpsLogo {
+  width: 320px;
+  height: 60px;
+  background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/logoGrenaderkorpset.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  text-indent: -10000em;
+  overflow: hidden;
+}
+
+#arrInfo a,
+a:visited {
+  color: #fff;
 }
 
 @media (min-width: 576px) {
