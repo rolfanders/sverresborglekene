@@ -49,6 +49,16 @@ a:visited {
   color: #486680;
 }
 
+a.button {
+  background-color: hsl(10deg 87% 65%);
+  color: white;
+  text-decoration: none;
+  border-radius: 48px;
+  padding: 12px 32px;
+  font-family: 'chaloops';
+  font-weight: 600;
+}
+
 h1 {
   height: 245px;
   width: 243px;
