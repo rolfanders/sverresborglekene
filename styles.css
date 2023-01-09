@@ -215,7 +215,7 @@ p {
   #arrInfo {
     width: 640px;
     text-align: left;
-    bottom: 20px;
+    bottom: 60px;
   }
 
   #arrInfo .korpsLogo {
@@ -233,13 +233,13 @@ p {
     font-size: 0.8em;
     font-weight: bold;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
   }
 
   #arrInfo .details {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 0;
     font-size: 0.9em;
     line-height: 1.3em;
   }
