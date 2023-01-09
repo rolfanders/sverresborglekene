@@ -36,40 +36,21 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/my.webmanifest" />
     <meta name="theme-color" content="#486680" />
-
-    <script type="module" src="script.js"></script>
-
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js';
-      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js';
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: 'AIzaSyC9P0sdMQado1ox8OJIZxGJg6PFSNI2Fx0',
-        authDomain: 'sverresborglekene-b76be.firebaseapp.com',
-        projectId: 'sverresborglekene-b76be',
-        storageBucket: 'sverresborglekene-b76be.appspot.com',
-        messagingSenderId: '875978306687',
-        appId: '1:875978306687:web:ac4003e200183ebdabbb4a',
-        measurementId: 'G-NF0QHNND2Z',
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
   </head>
   <body>
     <main>
       <header>
         <h1>Sverreseborglekene 2023</h1>
       </header>
-      <div id="contentWrapper"
-        <a href="https://grenaderkorpset.hoopla.no/sales/event/sverresborglekene2023/?utm_medium=featured_list&utm_source=hoopla.no" class="button">Meld deg på her!</a><br /><br />
+      <div id="contentWrapper">
+        <section style="text-align: center">
+          <a
+            href="https://grenaderkorpset.hoopla.no/sales/event/sverresborglekene2023/?utm_medium=featured_list&utm_source=hoopla.no"
+            id="signUpButton"
+            target="_blank"
+            >Meld deg på her!</a
+          >
+        </section>
         <section id="ingress">
           <p>
             Søndag 12. februar 2023 er det klart for den 55. utgaven av
@@ -89,11 +70,11 @@
           <h2>Praktisk informasjon</h2>
           <h3>Påmelding</h3>
           <p>
-            Påmelding kan snart gjøres her<!--(lenke til Sverresborglekene på Hoopla)-->, så følg med!
-            Det er også mulighet for påmelding på Byåsen butikksenter (ved
-            Remabutikken) lørdag 11. februar fra kl. 11-13. Påmelding på
-            renndagen kan gjøres mot et tillegg på kr. 20 i startkontingent.
-            <br /><br />Alle deltakere får premie.
+            Påmelding kan snart gjøres her<!--(lenke til Sverresborglekene på Hoopla)-->,
+            så følg med! Det er også mulighet for påmelding på Byåsen
+            butikksenter (ved Remabutikken) lørdag 11. februar fra kl. 11-13.
+            Påmelding på renndagen kan gjøres mot et tillegg på kr. 20 i
+            startkontingent. <br /><br />Alle deltakere får premie.
           </p>
           <h3>Adkomst og parkering</h3>
           <p>
