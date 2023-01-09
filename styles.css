@@ -179,6 +179,37 @@ p {
     background-size: 100% 268px;
     margin-top: 80px;
   }
+
+  #arrInfo {
+    width: 768px;
+    text-align: left;
+  }
+
+  #arrInfo .korpsLogo {
+    width: 280px;
+    height: 50px;
+    background-size: 280px auto;
+    margin: 0;
+    text-indent: -10000em;
+    overflow: hidden;
+  }
+
+  #arrInfo .arrangedBy {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  #arrInfo .details {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -200,6 +231,12 @@ p {
     height: 268px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjellLarge.svg');
     background-size: 100% 268px;
+  }
+
+  #arrInfo {
+    width: 960px;
+    text-align: left;
+    bottom: 20px;
   }
 }
 
