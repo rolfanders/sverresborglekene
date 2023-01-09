@@ -114,14 +114,14 @@ p {
   height: 60px;
   background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/logoGrenaderkorpset.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px auto;
   margin: 20px auto;
   text-indent: -10000em;
   overflow: hidden;
 }
 
 #arrInfo a,
-a:visited {
+#arrInfo a:visited {
   color: #fff;
 }
 
