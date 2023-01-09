@@ -99,7 +99,7 @@ p {
 
 #arrInfo {
   position: absolute;
-  bottom: 32px;
+  bottom: 50px;
   color: white;
   text-align: center;
   font-size: 0.9em;
@@ -116,7 +116,7 @@ p {
   background-repeat: no-repeat;
   background-size: 300px auto;
   background-position: center;
-  margin: 20px auto;
+  margin: 10px auto;
   text-indent: -10000em;
   overflow: hidden;
 }
@@ -124,6 +124,13 @@ p {
 #arrInfo a,
 #arrInfo a:visited {
   color: #fff;
+}
+
+#arrInfo .arrangedBy {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 @media (min-width: 576px) {
