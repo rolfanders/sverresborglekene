@@ -233,7 +233,7 @@ p {
     font-size: 0.8em;
     font-weight: bold;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
   }
 
   #arrInfo .details {
