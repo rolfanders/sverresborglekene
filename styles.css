@@ -50,7 +50,8 @@ section#sponsors {
 }
 
 section#sponsors img {
-  margin: auto;
+  width: 310px;
+  padding-top: 1.5em;
 }
 a,
 a:visited {
@@ -198,6 +199,11 @@ p {
     bottom: 10px;
     font-size: 0.9em;
     line-height: 1.3em;
+  }
+
+  section#sponsors img {
+    width: auto;
+    padding-top: 1.5em;
   }
 }
 
