@@ -49,6 +49,9 @@ section#sponsors {
   text-align: center;
 }
 
+section#sponsors img {
+  margin: auto;
+}
 a,
 a:visited {
   color: #486680;
