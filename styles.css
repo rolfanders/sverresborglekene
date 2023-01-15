@@ -87,6 +87,11 @@ h3 {
   color: #9a4839;
 }
 
+#sponsors h3 {
+  text-align: center;
+  color: #486680;
+}
+
 p {
   margin: 0 0 2em;
   line-height: 1.4em;
