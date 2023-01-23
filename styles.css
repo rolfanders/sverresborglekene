@@ -13,7 +13,8 @@ body {
   color: #363636;
   background-color: white;
   padding: 0;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 1.4em;
 }
 
 header {
@@ -65,7 +66,9 @@ a.button {
   padding: 12px 32px;
   font-family: 'chaloops';
   font-weight: 600;
-  margin: 0 0.5em;
+  font-size: 0.8em;
+  margin: 1em 0.5em;
+  display: block;
 }
 
 a.button#fb {
@@ -108,6 +111,7 @@ h2 {
 
 h3 {
   font-family: Chaloops;
+  font-weight: 600;
   margin: 0;
   color: #9a4839;
 }
@@ -124,8 +128,8 @@ p {
 
 #ingress {
   font-size: 1.6rem;
-  line-height: 2em;
-  font-weight: 400;
+  line-height: 2.4em;
+  font-weight: 300;
 }
 
 #arrInfo {
@@ -235,6 +239,12 @@ p {
     background-size: 100% 242px;
     margin-bottom: 60px;
   }
+
+  a.button {
+    margin: 0em 0.5em;
+    display: inline;
+  }
+
   h1 {
     width: 320px;
     height: 328px;
