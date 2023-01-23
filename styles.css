@@ -9,10 +9,12 @@ main {
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: #272727;
+  font-family: karmina-sans, system-ui, sans-serif;
+  color: #363636;
   background-color: white;
   padding: 0;
+  font-weight: 300;
+  font-size: 1.4em;
 }
 
 header {
@@ -45,19 +47,46 @@ section {
   margin: 0 0 4rem;
 }
 
+section#sponsors {
+  text-align: center;
+}
+
+section#sponsors img {
+  width: 310px;
+  padding-top: 1.5em;
+}
+
 a,
 a:visited {
   color: #486680;
 }
 
-a#signUpButton {
-  background-color: hsl(10deg 87% 65%);
-  color: white;
+a.button {
   text-decoration: none;
   border-radius: 48px;
   padding: 12px 32px;
   font-family: 'chaloops';
   font-weight: 600;
+  font-size: 0.8em;
+  margin: 1em 0.5em;
+  display: block;
+}
+
+a.button#fb {
+  background-color: #1877f2;
+  color: white;
+}
+
+a.button#signUp {
+  background-color: hsl(10deg 87% 65%);
+  color: white;
+}
+
+#fb img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 
 h1 {
@@ -83,8 +112,14 @@ h2 {
 
 h3 {
   font-family: Chaloops;
+  font-weight: 600;
   margin: 0;
   color: #9a4839;
+}
+
+#sponsors h3 {
+  text-align: center;
+  color: #486680;
 }
 
 p {
@@ -93,8 +128,9 @@ p {
 }
 
 #ingress {
-  font-size: 1.1rem;
-  line-height: 2em;
+  font-size: 1.6rem;
+  line-height: 2.4em;
+  font-weight: 300;
 }
 
 #arrInfo {
@@ -187,6 +223,11 @@ p {
     font-size: 0.9em;
     line-height: 1.3em;
   }
+
+  section#sponsors img {
+    width: auto;
+    padding-top: 1.5em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -199,6 +240,12 @@ p {
     background-size: 100% 242px;
     margin-bottom: 60px;
   }
+
+  a.button {
+    margin: 0em 0.5em;
+    display: inline;
+  }
+
   h1 {
     width: 320px;
     height: 328px;
