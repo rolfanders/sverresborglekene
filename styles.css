@@ -58,14 +58,30 @@ a:visited {
   color: #486680;
 }
 
-a#signUpButton {
-  background-color: hsl(10deg 87% 65%);
-  color: white;
+a.button {
   text-decoration: none;
   border-radius: 48px;
   padding: 12px 32px;
   font-family: 'chaloops';
   font-weight: 600;
+  margin: 0 0.5em;
+}
+
+a.button#fb {
+  background-color: #1877f2;
+  color: white;
+}
+
+a.button#signUp {
+  background-color: hsl(10deg 87% 65%);
+  color: white;
+}
+
+#fb img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5em;
 }
 
 h1 {
