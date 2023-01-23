@@ -9,10 +9,11 @@ main {
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: #272727;
+  font-family: karmina-sans, system-ui, sans-serif;
+  color: #363636;
   background-color: white;
   padding: 0;
+  font-weight: 600;
 }
 
 header {
@@ -122,8 +123,9 @@ p {
 }
 
 #ingress {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   line-height: 2em;
+  font-weight: 400;
 }
 
 #arrInfo {
