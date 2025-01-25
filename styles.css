@@ -17,6 +17,11 @@ body {
   font-size: 1.4em;
 }
 
+img {
+  border-radius: 16px;
+  width: 100%;
+}
+
 header {
   width: 100%;
   height: 255px;
@@ -36,6 +41,22 @@ footer {
   background-size: 100% 418px;
   margin-top: 60px;
   position: relative;
+}
+
+/* Bildekarusell / Slideshow */
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.carousel img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel img.active {
+  display: block;
 }
 
 #contentWrapper {
