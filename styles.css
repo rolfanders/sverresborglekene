@@ -45,7 +45,7 @@ footer {
 
 /* Bildekarusell / Slideshow */
 .carousel {
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -229,10 +229,6 @@ p {
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjellMedium.svg');
     background-size: 100% 268px;
     margin-top: 80px;
-  }
-
-  #carousel {
-    width: 570px;
   }
 
   #arrInfo {
