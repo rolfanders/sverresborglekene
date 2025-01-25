@@ -52,13 +52,23 @@ footer {
   border-radius: 8px; /* Myke hjørner */
   margin-bottom: 2em;
 }
+
 .carousel img {
-  width: 100%;
-  display: none;
-  transition: opacity 2s ease-in-out;
+  width: 100%; /* Bildene tilpasses bredden på karusellen */
+  max-width: 100%;
+  height: auto;
+  opacity: 0; /* Starter som usynlig */
+  visibility: hidden; /* Skjuler bildet, men beholder det i layouten */
+  position: absolute; /* Plasserer bildene oppå hverandre */
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Smidig overgang */
 }
+
 .carousel img.active {
-  display: block;
+  opacity: 1; /* Gjør det aktive bildet synlig */
+  visibility: visible; /* Sørger for at bildet er synlig */
+  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s; /* Fjern forsinkelsen for synlighet */
 }
 
 #contentWrapper {
