@@ -46,7 +46,6 @@ function createCarousel(images, containerId) {
     allImages[currentIndex].classList.add('active'); // Legg til aktiv klasse
   }, 3000); // Bytt bilde hver 3. sekund
 }
-
 const jsonUrl =
   'https://grenaderkorpset.no/sverresborglekene/2025/assets/slideshow/bilder.json'; // URL til JSON-filen
 fetchImagesFromJson(jsonUrl).then((images) =>
