@@ -30,7 +30,9 @@ function createCarousel(images, containerId) {
     const img = document.createElement("img");
     img.src = image.url;
     img.alt = image.description || "Bilde"; // Standard tekst hvis description mangler
-    img.classList.add(index === 0 ? "active" : ""); // Første bilde får klassen 'active'
+    if (index === 0) {
+      img.classList.add("active"); // Kun første bilde får 'active'
+    }
     container.appendChild(img);
   });
 

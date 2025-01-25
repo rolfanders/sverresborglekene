@@ -55,7 +55,7 @@ footer {
 .carousel img {
   width: 100%;
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .carousel img.active {
   display: block;
