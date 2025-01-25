@@ -49,26 +49,26 @@ footer {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  border-radius: 8px; /* Myke hjørner */
+  border-radius: 8px;
   margin-bottom: 2em;
+  display: grid; /* Gjør at det aktive bildet setter høyden */
+  justify-items: center; /* Sentrerer bilder horisontalt */
 }
 
 .carousel img {
-  width: 100%; /* Bildene tilpasses bredden på karusellen */
+  width: 100%; /* Tilpasser seg containerens bredde */
   max-width: 100%;
   height: auto;
-  opacity: 0; /* Starter som usynlig */
-  visibility: hidden; /* Skjuler bildet, men beholder det i layouten */
-  position: absolute; /* Plasserer bildene oppå hverandre */
-  top: 0;
-  left: 0;
-  transition: opacity 1s ease-in-out, visibility 0s linear 1s; /* Smidig overgang */
+  opacity: 0; /* Starter usynlig */
+  visibility: hidden; /* Skjuler bildet */
+  transition: opacity 1s ease-in-out, visibility 0s linear 1s;
+  grid-area: 1 / 1; /* Alle bildene overlapper */
 }
 
 .carousel img.active {
-  opacity: 1; /* Gjør det aktive bildet synlig */
-  visibility: visible; /* Sørger for at bildet er synlig */
-  transition: opacity 1s ease-in-out, visibility 0s linear 0s; /* Fjern forsinkelsen for synlighet */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out, visibility 0s linear 0s;
 }
 
 #contentWrapper {
