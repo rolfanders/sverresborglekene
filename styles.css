@@ -62,13 +62,13 @@ footer {
   position: absolute; /* Plasserer bildene oppå hverandre */
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s; /* Smidig overgang */
+  transition: opacity 1s ease-in-out, visibility 0s linear 1s; /* Smidig overgang */
 }
 
 .carousel img.active {
   opacity: 1; /* Gjør det aktive bildet synlig */
   visibility: visible; /* Sørger for at bildet er synlig */
-  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s; /* Fjern forsinkelsen for synlighet */
+  transition: opacity 1s ease-in-out, visibility 0s linear 0s; /* Fjern forsinkelsen for synlighet */
 }
 
 #contentWrapper {
