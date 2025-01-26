@@ -38,7 +38,6 @@ header {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 255px;
-  margin-bottom: 40px;
 }
 
 footer {
@@ -83,6 +82,8 @@ footer {
 #contentWrapper {
   width: 310px;
   margin: auto;
+  position: relative;
+  top: 0px;
 }
 
 section {
@@ -230,12 +231,13 @@ p {
 @media (min-width: 576px) {
   #contentWrapper {
     width: 480px;
+    position: relative;
+    top: 90px;
   }
   header {
     height: 242px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/headerBgMedium.svg');
     background-size: 100% 242px;
-    margin-bottom: 40px;
   }
   h1 {
     width: 261px;
@@ -307,7 +309,6 @@ p {
     height: 242px;
     background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/headerBgMedium.svg');
     background-size: 100% 242px;
-    margin-bottom: 60px;
   }
 
   a.button {
@@ -365,6 +366,8 @@ p {
 @media (min-width: 992px) {
   #contentWrapper {
     width: 960px;
+    position: relative;
+    top: -40px;
   }
   header {
     height: 501px;
