@@ -1,0 +1,136 @@
+/* Reset og base-stiler */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: karmina-sans, system-ui, sans-serif;
+  color: #363636;
+  background-color: white;
+  padding: 0;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+/* Typografi */
+h1, h2, h3, h4 {
+  font-family: Chaloops;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  color: #486680;
+  margin: 0 0 0.5rem;
+}
+
+h3 {
+  color: #9a4839;
+}
+
+p {
+  margin: 0 0 2em;
+  line-height: 1.4em;
+}
+
+/* Lenker - gjør denne mer spesifikk for å unngå overstyring */
+a:not(.button),
+a:not(.button):visited {
+  color: #486680 !important; /* Midlertidig bruk av !important mens vi feilsøker */
+}
+
+/* Knapper beholder sin egen farge */
+a.button {
+  text-decoration: none;
+  border-radius: 48px;
+  padding: 12px 32px;
+  font-family: 'chaloops';
+  font-weight: 600;
+  font-size: 0.8em;
+  margin: 1em 0.5em;
+  display: block;
+}
+
+a.button#fb {
+  background-color: #1877f2;
+  color: white;
+}
+
+a.button#signUp {
+  background-color: hsl(10deg 87% 65%);
+  color: white;
+}
+
+#fb img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+/* Innhold */
+#contentWrapper {
+  width: 310px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+}
+
+section {
+  margin: 0 0 4rem;
+}
+
+#ingress {
+  font-size: 1.6rem;
+  line-height: 2.4em;
+  font-weight: 300;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  #contentWrapper {
+    width: 480px;
+    position: relative;
+    top: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contentWrapper {
+    width: 640px;
+  }
+  
+  a.button {
+    margin: 0em 0.5em;
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  #contentWrapper {
+    width: 960px;
+    position: relative;
+    top: -40px;
+  }
+}
+
+/* Font imports */
+@import url("https://use.typekit.net/mvc6czz.css");

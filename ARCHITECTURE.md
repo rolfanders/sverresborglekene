@@ -1,5 +1,48 @@
 # Sverresborglekene - Arkitektur og Prosjektstruktur
 
+## Nåværende Status [Oppdatert]
+
+### Prosjektstruktur
+sverresborglekene/              # Hovedrepo
+├── static-version/            # Original statisk versjon
+│   ├── assets/
+│   ├── index.html
+│   ├── styles.css
+│   ├── carousel.js
+│   └── site.webmanifest
+├── astro-version/            # Ny Astro CMS versjon
+│   ├── src/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   └── pages/
+│   ├── public/
+│   └── astro.config.mjs
+└── ARCHITECTURE.md           # Prosjektdokumentasjon
+
+### Migrasjonsplan Status
+
+✅ Fase 1.1: Initial Setup
+- [x] Opprettet mappestruktur
+- [x] Flyttet statisk versjon til egen mappe
+- [x] Initialisert Astro-prosjekt
+
+🔄 Fase 1.2: Pågående
+- [ ] Sette opp Astro-komponenter
+- [ ] Konfigurere Decap CMS
+- [ ] Migrere innhold
+
+### Neste Steg
+1. Sette opp basis Astro-komponenter:
+   - Header
+   - Footer
+   - Carousel
+2. Migrere CSS til komponentbasert styling
+3. Implementere CMS-konfigurasjon
+
+### Vercel Deployment
+- static-version/ er satt som outputDirectory
+- Produksjonsversjon fortsetter å kjøre uforstyrret
+
 ## Oversikt
 Dette prosjektet er en modernisering av Sverresborglekene sin nettside, med fokus på:
 - Enkel innholdshåndtering via CMS

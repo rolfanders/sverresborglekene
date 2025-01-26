@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Carousel from '../components/Carousel.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Sverresborglekene | 9. Februar 2025">
+	<Header />
+	<main>
+		<div id="contentWrapper">
+			<!-- Påmeldingsseksjon -->
+			<section style="text-align: center">
+				<a 
+					class="button"
+					href="https://billett.no/sverresborglekene/sverresborglekene2025" 
+					id="signUp" 
+					target="_blank"
+				>
+					Meld deg på her!
+				</a>
+				
+				<a 
+					class="button" 
+					href="https://www.facebook.com/events/2505827969808914" 
+					id="fb" 
+					target="_blank"
+				>
+					<img 
+						class="fbLogo" 
+						src="https://www.grenaderkorpset.no/sverresborglekene/2023/assets/f_logo_RGB-White_1024.svg"
+					>
+					Følg med på Facebook
+				</a>
+			</section>
+
+			<!-- Ingress -->
+			<section id="ingress">
+				<p>
+					Søndag 9. februar 2025 er det klart for den 57. utgaven av Sverresborglekene. Sverresborglekene er et
+					lavterskeltilbud hvor det ikke er tidtaking, men vekt på gjennomføring, lek og gøy. <br /><br />
+					Her blir det skirenn og <a href="https://www.skiforbundet.no/rekruttering/skisprell/" target="_blank">Skisprell</a> i bakkene rundt BSK-hytta på Ferista!
+				</p>
+				<Carousel />
+			</section>
+
+			<!-- Praktisk informasjon -->
+			<section id="info">
+				<h2>Praktisk informasjon</h2>
+				<h3>Adkomst og parkering</h3>
+				<p>
+					Det er gratis parkering på Ferista og på Byåsen butikksenter. Det
+					ville være vakter til stede som dirigerer trafikken. Vi oppfordrer
+					alle som har mulighet til å ta buss. Det er gode bussforbindelser
+					til Byåsen butikksenter (buss nr. 11 mot Stavset) hvor det bare er
+					ca. 400 meter å gå til Ferista. Buss nr. 26 mot Skistua passerer
+					Ferista.
+					<br /><br />
+					<a href="https://atb.no" target="_blank">Busstidene finner du her</a>.
+				</p>
+
+				<h3>Mat og drikke</h3>
+				<p>
+					Du kan kjøpe mat og drikke på området fra kl. 10.30. Betaling skjer
+					med Vipps.
+				</p>
+
+				<h3>Løyper</h3>
+				<p>
+					Man kan velge mellom to løyper, eller ta begge to om man vil. Den
+					korteste er på ca. 800 meter og går i området rundt BSK-hytta og
+					Ferista parkeringsplass. Den lengste på ca. 1,5 km følger
+					rulleskiløypa opp i skogen, går under BSK-bakken (hoppbakken) og
+					kommer ned på sletta ved BSK-hytta.
+					<br /><br />
+					Start og mål for begge løypene er på sletta ved BSK-hytta.
+				</p>
+			</section>
+
+			<!-- Sponsorer -->
+			<section id="sponsors">
+				<h3>Vi er sponset av:</h3>
+				<div id="logosalat"></div>
+			</section>
+		</div>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	#contentWrapper {
+		width: 310px;
+		margin: auto;
+		position: relative;
+		top: 0px;
+	}
+
+	.button {
+		text-decoration: none;
+		border-radius: 48px;
+		padding: 12px 32px;
+		font-family: 'chaloops';
+		font-weight: 600;
+		font-size: 0.8em;
+		margin: 1em 0.5em;
+		display: block;
+	}
+
+	#fb {
+		background-color: #1877f2;
+		color: white;
+	}
+
+	#signUp {
+		background-color: hsl(10deg 87% 65%);
+		color: white;
+	}
+
+	.fbLogo {
+		width: 24px;
+		height: 24px;
+		vertical-align: middle;
+		margin-right: 0.5em;
+	}
+
+	@media (min-width: 768px) {
+		a.button {
+			margin: 0em 0.5em;
+			display: inline;
+		}
+	}
+
+	@media (min-width: 992px) {
+		#contentWrapper {
+			width: 960px;
+		}
+	}
+
+	section {
+		margin: 0 0 4rem;
+	}
+
+	#sponsors {
+		text-align: center;
+	}
+
+	#sponsors img {
+		width: 300px;
+		padding-top: 1.5em;
+	}
+
+	h2 {
+		margin: 2em 0 1em;
+	}
+
+	h3 {
+		margin: 1.5em 0 0.5em;
+	}
+
+	a {
+		color: #E30613;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+</style>

@@ -1,0 +1,76 @@
+<footer>
+  <div id="arrInfo">
+    <div class="arrangedBy">
+      <span>Arrangeres av</span><br />
+      <div class="korpsLogo">Grenaderkorpset</div>
+    </div>
+    <div class="details">
+      Pb 1121 Nyborg, 7420 Trondheim<br />
+      <a href="mailto:sverresborglekene@grenaderkorpset.no">
+        sverresborglekene@grenaderkorpset.no
+      </a><br /><br />
+      Kontaktperson: Else Bø<br />
+      Telefon: 482 25 533<br />
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    width: 100%;
+    height: 268px;
+    background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjell.svg');
+    background-size: 100% 268px;
+    position: relative;
+  }
+
+  #arrInfo {
+    width: 310px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    height: 100%;
+    color: white;
+  }
+
+  a, a:visited {
+    color: white;
+  }
+
+  .arrangedBy {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .details {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: 400;
+    text-align: right;
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+
+  .korpsLogo {
+    font-family: "alternate-gothic-no-3-d", sans-serif;
+    font-size: 2em;
+    line-height: 0.8;
+  }
+
+  @media (min-width: 992px) {
+    footer {
+      height: 268px;
+      background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjellLarge.svg');
+    }
+
+    #arrInfo {
+      width: 960px;
+      bottom: 20px;
+    }
+  }
+</style>

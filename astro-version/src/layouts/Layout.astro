@@ -1,0 +1,45 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { 
+	title,
+	description = "Hjemmeside for Sverresborglekene 2025 – lokale vinterleker for barn på Byåsen i Trondheim arrangert av Grenaderkorpset"
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/mvc6czz.css" />
+		
+		<!-- Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://www.sverresborglekene.no/image.jpg" />
+		<meta property="og:locale" content="nb_NO" />
+		<meta property="og:type" content="website" />
+		
+		<!-- Favicons -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="Sverresborglekene" />
+		<link rel="manifest" href="/site.webmanifest" />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	@import '../styles/global.css';
+</style>
