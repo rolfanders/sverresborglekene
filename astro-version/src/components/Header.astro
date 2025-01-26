@@ -10,8 +10,6 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    /* background-size: 100% 418px; */
-    /* margin-top: 60px; */
     position: relative;
   }
 
@@ -30,12 +28,11 @@
     color: transparent;
   }
   
-
-  /* @media (min-width: 576px) {
+  @media (min-width: 576px) {
     header {
-        height: 242px;
         background-image: url('/assets/headerBgMedium.svg');
-        background-size: 100% 242px;
+        height: 242px;
+        background-size: cover;
     }
 
     h1 {
@@ -47,14 +44,25 @@
 }
 
   @media (min-width: 768px) {
+    header {
+        height: 280px;
+        background-image: url('/assets/headerBgMedium.svg');
+        background-size: 100%;
+    }
 
+    h1 {
+        width: 320px;
+        height: 328px;
+        top: -37px;
+        background-size: 320px;
+    }
   } 
 
   @media (min-width: 992px) {
     header {
       height: 501px;
       background-image: url('/assets/headerBgLarge.svg');
-      background-size: 100% 501px;
+      background-size: cover;
     }
     h1 {
       width: 482px;
@@ -62,5 +70,5 @@
       top: -33px;
       background-size: 482px;
     }
-  } */
+  }
 </style>

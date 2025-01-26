@@ -6,7 +6,9 @@
         </div>
         <div class="details">
             Pb 1121 Nyborg, 7420 Trondheim<br />
-            <a href="mailto:sverresborglekene@grenaderkorpset.no">sverresborglekene@grenaderkorpset.no</a>
+            <a href="mailto:sverresborglekene@grenaderkorpset.no"
+                >sverresborglekene@grenaderkorpset.no</a
+            >
             <br /><br />
             Kontaktperson: Else Bø<br />
             Telefon: 482 25 533<br />
@@ -18,12 +20,12 @@
     footer {
         width: 100%;
         height: 418px;
-        background-image: url("assets/fjellSmall.svg");
+        background-image: url("/assets/fjellSmall.svg");
         background-size: 100% 418px;
         background-position: top center;
         background-repeat: no-repeat;
         position: relative;
-        margin-top: 60px;
+        margin-top: 0;
     }
 
     a,
@@ -40,13 +42,12 @@
         line-height: 1.4em;
         left: 0;
         right: 0;
-        //margin: 0 auto;
     }
 
     #arrInfo .korpsLogo {
         width: 320px;
         height: 60px;
-        background-image: url("assets/logoGrenaderkorpset.svg");
+        background-image: url("/assets/logoGrenaderkorpset.svg");
         background-repeat: no-repeat;
         background-size: 300px auto;
         background-position: center;
@@ -65,16 +66,65 @@
         margin-top: 30px;
     }
 
-    /* 
+    @media (min-width: 576px) {
+        footer {
+            background-image: url('/assets/fjellMedium.svg');
+            background-size: cover;
+            margin-top: 90px;
+        }
+
+         #arrInfo {
+            width: 480px;
+            bottom: 50px;
+            margin: 0 auto;
+        } 
+    }
+
+    @media (min-width: 768px) {
+        footer {
+            height: 300px;
+            margin-top: 120px;
+        }
+
+        #arrInfo {
+            width: 640px;
+            text-align: left;
+            bottom: 60px;
+        }
+
+        #arrInfo .korpsLogo {
+            width: 280px;
+            height: 50px;
+            background-size: 280px auto;
+            margin: 0;
+            text-indent: -10000em;
+            overflow: hidden;
+        }
+
+        #arrInfo .arrangedBy {
+            text-transform: uppercase;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        #arrInfo .details {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-weight: 400;
+            line-height: 1.3em;
+        }
+    }
+
   @media (min-width: 992px) {
     footer {
-      height: 268px;
-      background-image: url('assets/fjellLarge.svg');
+      background-image: url('/assets/fjellLarge.svg');
     }
 
     #arrInfo {
       width: 960px;
-      bottom: 20px;
+      bottom: 60px;
     }
-  } */
+  } 
 </style>
