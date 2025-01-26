@@ -1,76 +1,80 @@
 <footer>
-  <div id="arrInfo">
-    <div class="arrangedBy">
-      <span>Arrangeres av</span><br />
-      <div class="korpsLogo">Grenaderkorpset</div>
+    <div id="arrInfo">
+        <div class="arrangedBy">
+            <span>Arrangeres av</span><br />
+            <div class="korpsLogo">Grenaderkorpset</div>
+        </div>
+        <div class="details">
+            Pb 1121 Nyborg, 7420 Trondheim<br />
+            <a href="mailto:sverresborglekene@grenaderkorpset.no">sverresborglekene@grenaderkorpset.no</a>
+            <br /><br />
+            Kontaktperson: Else Bø<br />
+            Telefon: 482 25 533<br />
+        </div>
     </div>
-    <div class="details">
-      Pb 1121 Nyborg, 7420 Trondheim<br />
-      <a href="mailto:sverresborglekene@grenaderkorpset.no">
-        sverresborglekene@grenaderkorpset.no
-      </a><br /><br />
-      Kontaktperson: Else Bø<br />
-      Telefon: 482 25 533<br />
-    </div>
-  </div>
 </footer>
 
 <style>
-  footer {
-    width: 100%;
-    height: 268px;
-    background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjell.svg');
-    background-size: 100% 268px;
-    position: relative;
-  }
+    footer {
+        width: 100%;
+        height: 418px;
+        background-image: url("assets/fjellSmall.svg");
+        background-size: 100% 418px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 60px;
+    }
 
-  #arrInfo {
-    width: 310px;
-    margin: auto;
-    position: relative;
-    text-align: left;
-    height: 100%;
-    color: white;
-  }
+    a,
+    a:visited {
+        color: #fff;
+    }
 
-  a, a:visited {
-    color: white;
-  }
+    #arrInfo {
+        position: absolute;
+        bottom: 80px;
+        color: white;
+        text-align: center;
+        font-size: 0.7em;
+        line-height: 1.4em;
+        left: 0;
+        right: 0;
+        //margin: 0 auto;
+    }
 
-  .arrangedBy {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.8em;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0px;
-  }
+    #arrInfo .korpsLogo {
+        width: 320px;
+        height: 60px;
+        background-image: url("assets/logoGrenaderkorpset.svg");
+        background-repeat: no-repeat;
+        background-size: 300px auto;
+        background-position: center;
+        margin: 10px auto;
+        text-indent: -10000em;
+        overflow: hidden;
+    }
 
-  .details {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-weight: 400;
-    text-align: right;
-    font-size: 0.8em;
-    line-height: 1.3em;
-  }
+    #arrInfo .arrangedBy {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
 
-  .korpsLogo {
-    font-family: "alternate-gothic-no-3-d", sans-serif;
-    font-size: 2em;
-    line-height: 0.8;
-  }
+    #arrInfo .details {
+        margin-top: 30px;
+    }
 
+    /* 
   @media (min-width: 992px) {
     footer {
       height: 268px;
-      background-image: url('https://www.grenaderkorpset.no/sverresborglekene/2023/assets/fjellLarge.svg');
+      background-image: url('assets/fjellLarge.svg');
     }
 
     #arrInfo {
       width: 960px;
       bottom: 20px;
     }
-  }
+  } */
 </style>

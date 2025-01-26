@@ -5,12 +5,14 @@
 
 html, body {
   width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
 main {
   width: 100%;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -30,6 +32,10 @@ img {
   width: 100%;
 }
 
+section {
+  margin: 0 1em 4rem;
+}
+
 /* Typografi */
 h1, h2, h3, h4 {
   font-family: Chaloops;
@@ -39,11 +45,13 @@ h1, h2, h3, h4 {
 
 h2 {
   color: #486680;
-  margin: 0 0 0.5rem;
+  margin: 2em 0 1em;
+
 }
 
 h3 {
   color: #9a4839;
+  margin: 1.5em 0 0.5em;
 }
 
 p {
@@ -51,43 +59,16 @@ p {
   line-height: 1.4em;
 }
 
-/* Lenker - gjør denne mer spesifikk for å unngå overstyring */
-a:not(.button),
-a:not(.button):visited {
-  color: #486680 !important; /* Midlertidig bruk av !important mens vi feilsøker */
+a, a:visited {
+  color: #486680;
 }
 
-/* Knapper beholder sin egen farge */
-a.button {
-  text-decoration: none;
-  border-radius: 48px;
-  padding: 12px 32px;
-  font-family: 'chaloops';
-  font-weight: 600;
-  font-size: 0.8em;
-  margin: 1em 0.5em;
-  display: block;
-}
-
-a.button#fb {
-  background-color: #1877f2;
-  color: white;
-}
-
-a.button#signUp {
-  background-color: hsl(10deg 87% 65%);
-  color: white;
-}
-
-#fb img {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-right: 0.5em;
-}
+a:hover {
+    text-decoration: underline;
+}   
 
 /* Innhold */
-#contentWrapper {
+/* #contentWrapper {
   width: 310px;
   margin: auto;
   position: relative;
@@ -102,16 +83,29 @@ section {
   font-size: 1.6rem;
   line-height: 2.4em;
   font-weight: 300;
-}
+} */
 
 /* Media Queries */
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   #contentWrapper {
     width: 480px;
     position: relative;
     top: 90px;
   }
 }
+/* @media (min-width: 768px) {
+    a.button {
+        margin: 0em 0.5em;
+        display: inline;
+    }
+}
+
+@media (min-width: 992px) {
+    #contentWrapper {
+        width: 960px;
+    }
+} */
+/*
 
 @media (min-width: 768px) {
   #contentWrapper {
@@ -130,7 +124,7 @@ section {
     position: relative;
     top: -40px;
   }
-}
+} */
 
 /* Font imports */
 @import url("https://use.typekit.net/mvc6czz.css");
