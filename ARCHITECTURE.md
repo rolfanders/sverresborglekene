@@ -27,7 +27,7 @@ sverresborglekene/              # Hovedrepo
 - [x] Initialisert Astro-prosjekt
 
 🔄 Fase 1.2: Pågående
-- [ ] Sette opp Astro-komponenter
+- [x] Sette opp Astro-komponenter
 - [ ] Konfigurere Decap CMS
 - [ ] Migrere innhold
 
